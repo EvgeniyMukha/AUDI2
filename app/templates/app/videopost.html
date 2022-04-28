@@ -1,0 +1,18 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h1>{{ title }}.</h1>
+<hr />
+<div>
+    <h2>Видео-ролик 1</h2>
+    <video class="vid" src="/media/AUDI1.mp4" controls="controls" width="400" height="300" poster="/media/kvid1.jpg"></video>
+    <p class="podvid"></p>
+</div>
+<hr />
+<div>
+    <h2>Видео-ролик 2</h2>
+    <video class="vid" src="/media/AUDIA.mp4" controls="controls" width="400" height="300" poster="/media/kvid2.jpg"></video>
+</div>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+<div class="led">
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+<p><a href="https://vk.com/audi"><img src="{% static "app/content/exlusive.jpg" %}" width="650" height="500" /> Собрать свой эксклюзивный автомобиль Audi</a></p>
+<p>Audi Nanuk Quattro Concept 2013</p>
+<img src="{% static "app/content/Quattro.jpg" %}" width="900" height="550" /><br><br>
+<p>Audi e-tron Sportback Concept 2017</p>
+<img src="{% static "app/content/e-tron.jpg" %}" width="900" height="550" />
+<p><a href="https://ru.wikipedia.org/wiki/Audi"> <img="wiki.PNG" /> Узнать больше об Audi</a></p>
+<a href="https://ru.wikipedia.org/wiki/Audi"><img src="{% static "app/content/wiki.png" %}" width="650" height="600" /></a>
+<p><a href="https://vk.com/audi">Audi в "VK"</a></p>
+<a href="https://vk.com/audi"><img src="{% static "app/content/vk (1).png" %}" width="550" height="500" /></a>
+</div>
+{% endblock %}

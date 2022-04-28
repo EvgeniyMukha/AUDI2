@@ -1,0 +1,182 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+<div class="jumbotron">
+    <h1>AUDI</h1>
+    <p class="lead">Сайт посвящен компании "Audi AG", специализирующаяся на выпуске автомобилей под маркой Audi.</p>
+    <p><a href="https://www.audi.ru/ru/web/ru.html" class="btn btn-primary btn-large">Заказать &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Начало работы</h2>
+        <p>
+            Audi в нынешнем виде является наследником концерна Auto Union, образованного в результате объединения четырёх компаний, 
+            выпускавших автомобили и мотоциклы 
+            под марками DKW, Horch, Audi и Wanderer.
+        </p>
+        <p><a class="btn btn-default" href="https://ru.wikipedia.org/wiki/Audi">Читать больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Получить больше библиотек</h2>
+        <p>Найти дилера в России и не тольно</p>
+        <p><a class="btn btn-default" href="https://www.audi.ru/ru/web/ru/dealer-search.html">Найти поставщика &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Красочные видео о наших машинах</h2>
+        <p>Официальный YouTube сайт Audi</p>
+        <p><a class="btn btn-default" href="https://www.youtube.com/audi">Смотреть &raquo;</a></p>
+    </div>
+</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+    <ol class="carousel-indicators">
+
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+
+            <a href="https://www.audi.ru/ru/web/ru/model-range/a-models.html"> <img src="{% static 'app/content/banner11.jpg'%} " alt="Первый слайд" class="img-responsive" /> </a>
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                    Модели класса "А"
+
+                    <a class="dalee" href="https://www.audi.ru/ru/web/ru/model-range/a-models.html">
+
+                        Читать далее
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <a href="https://www.audi.ru/ru/web/ru/model-range/q-models.html"> <img src="{% static 'app/content/banner22.jpg'%}" alt="Второй слайд"  class="img-responsive" /> </a>
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                    Модели класса "Q"
+
+                    <a class="dalee" href="https://www.audi.ru/ru/web/ru/model-range/q-models.html">
+
+                        Читать далее
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <a href="https://www.audi.ru/ru/web/ru/model-range/q-models.html"> <img src=" {% static 'app/content/banner33.jpg'%} " alt="Третий слайд"  class="img-responsive" /> </a>
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                    Модели класса "e-tron"
+
+                    <a class="dalee" href="https://www.audi.ru/ru/web/ru/model-range/e-tron-models.html">
+
+                        Читать далее
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+        
+        <div class="item">
+
+            <a href="https://www.audi.ru/ru/web/ru/model-range/s-models.html"> <img src=" {% static 'app/content/banner44.jpg'%} " alt="Четвёрный слайд"  class="img-responsive" /> </a>
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                    Модели класса "S"
+
+                    <a class="dalee" href="https://www.audi.ru/ru/web/ru/model-range/s-models.html">
+
+                        Читать далее
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <a href="https://www.audi.ru/ru/web/ru/model-range/rs-models.html"> <img src=" {% static 'app/content/banner55.jpeg' %} " alt="Пятый слайд"  class="img-responsive" /> </a>
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                    Модели класса "RS"
+
+                    <a class="dalee" href="https://www.audi.ru/ru/web/ru/model-range/rs-models.html">
+
+                        Читать далее
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+        <span class="sr-only">Previous</span>
+
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+        <span class="sr-only">Next</span>
+
+    </a>
+
+</div>
+
+{% endblock %}

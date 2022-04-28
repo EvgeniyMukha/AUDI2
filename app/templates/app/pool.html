@@ -1,0 +1,41 @@
+﻿{% extends "app/layout.html" %}
+{% block content %}
+
+{% if form != None %}
+<br><h2>Оставьте отзыв</h2><br>
+<div class="Pool">
+<form method="post">
+{% csrf_token %}
+<p>Ваше имя:</p>
+<label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
+{{ form.name }}<br><br>
+<label for="{{ form.product.id_for_label }}">{{ form.product.label }}:</label>
+{{ form.product }}
+<label for="{{ form.score.id_for_label }}">{{ form.score.label }}:</label>
+{{ form.score }}<br><br>
+<label for="{{ form.notice.id_for_label }}">{{ form.notice.label }}:</label>
+{{ form.notice }}<br><br>
+<label for="{{ form.email.id_for_label }}">{{ form.email.label }}:</label>
+{{ form.email }}<br><br>
+<p>Ваш отзыв:</p>
+<div class="message"><label for="{{ form.message.id_for_label }}">{{ form.message.label }}</label>
+{{ form.message }}<br><br>
+</div>
+<div class="send">
+<input type="submit" value="Отправить">
+</div>
+</form>
+</div>
+{% else %}
+<br><h2>Благодарим за отзыв!</h2>
+<h3>Информация:</h3>
+<ul>
+<li><span>Имя:</span>{{data.name}}</li>
+<li><span>Ваш отзыв:</span>{{data.message}}</li>
+<li><span>Оценка продукции:</span>{{data.product}}</li>
+<li><span>Оценка обслуживания:</span>{{data.score}}</li>
+<li><span>Получать новости сайта на e-mail:</span>{{data.notice}}</li>
+<li><span>Ваш e-mail:</span>{{data.email}}</li>
+</ul>
+{% endif %}
+{% endblock %}
